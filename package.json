@@ -1,0 +1,66 @@
+{
+  "name": "@marcnuri/gatsby-plugin-material-ui",
+  "description": "Gatsby plugin for Material-UI with built-in server-side rendering support (Fork of hupe1980/gatsby-plugin-material-ui -Frank Hübner-)",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore \"**/__tests__\"",
+    "pretest": "eslint --ignore-path .gitignore .",
+    "test": "jest"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Marc Nuri",
+    "url": "https://blog.marcnuri.com"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "material",
+    "material-ui"
+  ],
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manusa/gatsby-plugin-material-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manusa/gatsby-plugin-material-ui/issues"
+  },
+  "homepage": "https://github.com/manusa/gatsby-plugin-material-ui#readme",
+  "peerDependencies": {
+    "gatsby": "^5.8.1",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.21.0",
+    "@babel/core": "7.21.4",
+    "@babel/eslint-parser": "7.21.3",
+    "babel-jest": "29.5.0",
+    "babel-preset-gatsby-package": "3.8.0",
+    "eslint": "8.37.0",
+    "eslint-plugin-jest": "27.2.1",
+    "eslint-plugin-react": "7.32.2",
+    "jest": "29.5.0",
+    "jsdom": "21.1.1",
+    "react": "18.2.0",
+    "react-test-renderer": "18.2.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "babel-preset-gatsby-package",
+        {
+          "browser": true
+        }
+      ]
+    ]
+  }
+}
